@@ -5,10 +5,9 @@ This script converts passwords from an Enpass JSON export to the pass (Linux pas
 ## Usage
 
 1. Export your passwords from Enpass as JSON
-2. Place the exported JSON file as `pass.json` in this directory
-3. Run the script:
+2. Run the script with the path to your Enpass JSON file:
    ```bash
-   python main.py
+   python main.py /path/to/enpass_export.json
    ```
 
 ## Requirements

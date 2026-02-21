@@ -122,4 +122,4 @@ with open('test_pass.json', 'w') as f:
     json.dump(test_data, f, indent=2)
 
 print("Created test_pass.json file for verification")
-print("You can now run: python main.py")
+print("You can now run: python main.py test_pass.json")

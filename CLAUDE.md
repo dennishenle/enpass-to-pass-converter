@@ -10,22 +10,20 @@ This is a Python script that converts passwords from an Enpass JSON export to th
 
 - `main.py`: The main script that handles the conversion process
 - `test_setup.py`: Test setup script that creates sample Enpass JSON data for testing
-- `pass.json`: Sample Enpass export file (not included in repo, must be provided by user)
 - `pyproject.toml`: Project configuration file
 
 ## How to Run
 
 1. Export your passwords from Enpass as JSON
-2. Place the exported JSON file as `pass.json` in this directory
-3. Run the script:
+2. Run the script with the path to your Enpass JSON file:
    ```bash
-   python main.py
+   python main.py /path/to/enpass_export.json
    ```
 
 ## Development Commands
 
-- Run the main script: `python main.py`
-- Run tests: `python test_setup.py` (creates test data) then `python main.py`
+- Run the main script: `python main.py /path/to/enpass_export.json`
+- Run tests: `python test_setup.py` (creates test data) then `python main.py test_pass.json`
 - The script requires Python 3.13+ and the pass password manager to be installed and configured
 
 ## Code Architecture
