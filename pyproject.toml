@@ -1,0 +1,7 @@
+[project]
+name = "enpass2pass-converter"
+version = "0.1.0"
+description = "Convert Enpass passwords to pass (Linux password manager)"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
