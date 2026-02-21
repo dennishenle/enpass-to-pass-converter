@@ -81,7 +81,13 @@ def main():
         sys.exit(1)
 
     # Load the Enpass JSON file
-    json_file = 'pass.json'
+    if len(sys.argv) < 2:
+        print("Error: Please provide the path to the Enpass JSON file as an argument")
+        print("Usage: python main.py /path/to/enpass_export.json")
+        sys.exit(1)
+
+    json_file = sys.argv[1]
+
     if not os.path.exists(json_file):
         print(f"Error: {json_file} not found")
         sys.exit(1)
